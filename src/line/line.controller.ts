@@ -23,6 +23,7 @@ export class LineController {
   @Post('webhook')
   async handleWebhook(@Req() req: Request, @Res() res: Response): Promise<any> {
     const events = req.body.events;
+    console.log(events);
 
     // Process each event received from LINE
     for (const event of events) {

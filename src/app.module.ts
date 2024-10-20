@@ -6,7 +6,7 @@ import { LineModule } from './line/line.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: '.env.dev', // Specify the path to your .env.dev file
+      envFilePath: '.env.local', // Specify the path to your .env.dev file
       isGlobal: true, // Make the configuration global
     }),
     LineModule,
